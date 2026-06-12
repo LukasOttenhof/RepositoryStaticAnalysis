@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aida — Python AI Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <h1>Aida</h1>
+      <p>Your Python programming AI assistant</p>
+    </div>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active" onclick="showTab('login')">Sign In</button>
+      <button class="auth-tab" onclick="showTab('register')">Create Account</button>
+    </div>
+
+    <form id="auth-form" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Enter username" autocomplete="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter password" autocomplete="current-password" required>
+      </div>
+      <button class="btn-primary" type="submit" id="submit-btn">Sign In</button>
+    </form>
+
+    <div class="auth-error" id="error-msg"></div>
+  </div>
+</div>
+
+<script>
+  let currentTab = 'login';
+
+  // Redirect if already logged in
+  if (localStorage.getItem('token')) {
+    window.location.href = '/ask';
+  }
+
+  function showTab(tab) {
+    currentTab = tab;
+    document.querySelectorAll('.auth-tab').forEach((el, i) => {
+      el.classList.toggle('active', (i === 0) === (tab === 'login'));
+    });
+    document.getElementById('submit-btn').textContent = tab === 'login' ? 'Sign In' : 'Create Account';
+    document.getElementById('error-msg').textContent = '';
+    document.getElementById('password').autocomplete = tab === 'login' ? 'current-password' : 'new-password';
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
+    const btn = document.getElementById('submit-btn');
+    const err = document.getElementById('error-msg');
+
+    err.textContent = '';
+    btn.disabled = true;
+    btn.textContent = currentTab === 'login' ? 'Signing in…' : 'Creating account…';
+
+    try {
+      const res = await fetch(`/api/${currentTab === 'login' ? 'login' : 'register'}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        err.textContent = data.detail || 'Something went wrong';
+        return;
+      }
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('username', data.username);
+      window.location.href = '/ask';
+    } catch {
+      err.textContent = 'Network error. Is the server running?';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = currentTab === 'login' ? 'Sign In' : 'Create Account';
+    }
+  }
+
+  // Allow pressing Enter in username field to move to password
+  document.getElementById('username').addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      document.getElementById('password').focus();
+    }
+  });
+</script>
+</body>
+</html>
