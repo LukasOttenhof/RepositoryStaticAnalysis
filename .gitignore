@@ -1,0 +1,12 @@
+# SonarQube analysis artifacts
+.sonar-token
+.tools/
+.scannerwork/
+
+# cloned repositories under analysis
+projects/
+
+# python / os
+__pycache__/
+*.pyc
+.DS_Store
