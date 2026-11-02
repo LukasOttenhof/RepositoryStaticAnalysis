@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="directed"><node id="getParticipantKey"/>
+<node id="getMachineId"/>
+<node id="emit"/>
+<node id="flush"/>
+<node id="describeElement"/>
+<node id="ChatView"/>
+<node id="submit"/>
+<node id="CodeBlock"/>
+<node id="ConversationSidebar"/>
+<node id="getTextContent"/>
+<node id="pre"/>
+<node id="code"/>
+<node id="MessageBubble"/>
+<node id="useCurrentUser"/>
+<node id="useLogin"/>
+<node id="useLogout"/>
+<node id="useCollectEmail"/>
+<node id="useVerifyEmail"/>
+<node id="useForgotPassword"/>
+<node id="useResetPassword"/>
+<node id="useAcceptInvite"/>
+<node id="parseSseFrame"/>
+<node id="useChatStream"/>
+<node id="conversationDetailQueryKey"/>
+<node id="useConversationDetail"/>
+<node id="useConversations"/>
+<node id="courseQueryKey"/>
+<node id="enrollmentsQueryKey"/>
+<node id="useCourses"/>
+<node id="useCourseDetail"/>
+<node id="useCreateCourse"/>
+<node id="useUpdateCourse"/>
+<node id="useDeleteCourse"/>
+<node id="useCreateSyllabusModule"/>
+<node id="useUpdateSyllabusModule"/>
+<node id="useDeleteSyllabusModule"/>
+<node id="useEnrolledStudents"/>
+<node id="useEnrollStudent"/>
+<node id="useBulkEnroll"/>
+<node id="useUnenrollStudent"/>
+<node id="useInstructorConversations"/>
+<node id="useInstructorConversationDetail"/>
+<node id="useMyCourses"/>
+<node id="useUpdateConversationVisibility"/>
+<node id="constructor"/>
+<node id="apiFetch"/>
+<node id="formatConversationTimestamp"/>
+<node id="AcceptInvitePage"/>
+<node id="ChatPage"/>
+<node id="CheckEmailPage"/>
+<node id="CollectEmailPage"/>
+<node id="ForgotPasswordPage"/>
+<node id="HomePage"/>
+<node id="InstructorConversationDetailPage"/>
+<node id="InstructorConversationsPage"/>
+<node id="InstructorCourseDetailPage"/>
+<node id="CourseHeader"/>
+<node id="SyllabusSection"/>
+<node id="SyllabusModuleEditForm"/>
+<node id="EnrollmentSection"/>
+<node id="InstructorCoursesPage"/>
+<node id="ProtectedRoute"/>
+<node id="RequireInstructor"/>
+<node id="RequireVerified"/>
+<node id="ResetPasswordPage"/>
+<node id="VerifyEmailPage"/>
+<node id="Button"/>
+<node id="Input"/>
+<node id="Label"/>
+<node id="Textarea"/>
+<node id="isUniqueViolation"/>
+<node id="sendEmail"/>
+<node id="enrollmentInviteEmail"/>
+<node id="courseEnrollmentNotificationEmail"/>
+<node id="verifyEmailEmail"/>
+<node id="passwordResetEmail"/>
+<node id="encodeCursor"/>
+<node id="decodeCursor"/>
+<node id="getChatCompletion"/>
+<node id="parseContentChunk"/>
+<node id="notFoundHandler"/>
+<node id="errorHandler"/>
+<node id="requireAuth"/>
+<node id="requireRole"/>
+<node id="requireVerified"/>
+<node id="createConversation"/>
+<node id="updateTitle"/>
+<node id="findConversationByIdForUser"/>
+<node id="findConversationById"/>
+<node id="updateVisibility"/>
+<node id="listConversationsForUser"/>
+<node id="createCourse"/>
+<node id="listCoursesForInstructor"/>
+<node id="findCourseByIdForInstructor"/>
+<node id="findCourseById"/>
+<node id="listCoursesForStudent"/>
+<node id="updateCourse"/>
+<node id="softDeleteCourse"/>
+<node id="countForCourse"/>
+<node id="createEnrollment"/>
+<node id="listStudentsForCourse"/>
+<node id="findEnrollment"/>
+<node id="deleteEnrollment"/>
+<node id="listConversationsForInstructor"/>
+<node id="findConversationByIdForInstructor"/>
+<node id="createMessage"/>
+<node id="listMessagesForConversation"/>
+<node id="createSession"/>
+<node id="findSession"/>
+<node id="touchSession"/>
+<node id="deleteSession"/>
+<node id="createModule"/>
+<node id="listModulesForCourse"/>
+<node id="findModuleByIdForCourse"/>
+<node id="updateModule"/>
+<node id="deleteModule"/>
+<node id="createToken"/>
+<node id="findValidToken"/>
+<node id="findLatestTokenForUser"/>
+<node id="markTokenUsed"/>
+<node id="createUser"/>
+<node id="findUserByUsername"/>
+<node id="findUserByEmail"/>
+<node id="findUserById"/>
+<node id="setEmail"/>
+<node id="setEmailVerified"/>
+<node id="setPassword"/>
+<node id="setSessionCookie"/>
+<node id="postMessage"/>
+<node id="writeSseEvent"/>
+<node id="toUserDto"/>
+<node id="sendVerificationEmailIfDue"/>
+<node id="login"/>
+<node id="logout"/>
+<node id="collectEmail"/>
+<node id="verifyEmail"/>
+<node id="forgotPassword"/>
+<node id="resetPassword"/>
+<node id="acceptInvite"/>
+<node id="generateTitleSummary"/>
+<node id="buildSystemPrompt"/>
+<node id="startNewConversation"/>
+<node id="continueConversation"/>
+<node id="toConversationSummary"/>
+<node id="toMessageDto"/>
+<node id="listConversations"/>
+<node id="canRead"/>
+<node id="getConversationDetail"/>
+<node id="toCourseSummary"/>
+<node id="toSyllabusModuleDto"/>
+<node id="requireOwnedCourse"/>
+<node id="listCourses"/>
+<node id="listEnrolledCourses"/>
+<node id="getCourseDetail"/>
+<node id="deleteCourse"/>
+<node id="createSyllabusModule"/>
+<node id="updateSyllabusModule"/>
+<node id="deleteSyllabusModule"/>
+<node id="enrollStudent"/>
+<node id="enrollSingle"/>
+<node id="parseRow"/>
+<node id="enrollBulk"/>
+<node id="listEnrolledStudents"/>
+<node id="unenrollStudent"/>
+<node id="toSummary"/>
+<node id="hashToken"/>
+<node id="issueToken"/>
+<node id="consumeToken"/>
+<node id="shouldIssueFreshToken"/>
+<edge source="emit" target="getParticipantKey"/>
+<edge source="emit" target="flush"/>
+<edge source="flush" target="getParticipantKey"/>
+<edge source="ChatView" target="useCurrentUser"/>
+<edge source="ChatView" target="useChatStream"/>
+<edge source="ChatView" target="useConversationDetail"/>
+<edge source="ChatView" target="useMyCourses"/>
+<edge source="ChatView" target="useUpdateConversationVisibility"/>
+<edge source="ConversationSidebar" target="useCurrentUser"/>
+<edge source="ConversationSidebar" target="useLogout"/>
+<edge source="ConversationSidebar" target="useConversations"/>
+<edge source="pre" target="getTextContent"/>
+<edge source="useConversationDetail" target="conversationDetailQueryKey"/>
+<edge source="useCourseDetail" target="courseQueryKey"/>
+<edge source="useEnrolledStudents" target="enrollmentsQueryKey"/>
+<edge source="AcceptInvitePage" target="useAcceptInvite"/>
+<edge source="CheckEmailPage" target="useCurrentUser"/>
+<edge source="CheckEmailPage" target="useLogout"/>
+<edge source="CollectEmailPage" target="useCurrentUser"/>
+<edge source="CollectEmailPage" target="useLogout"/>
+<edge source="CollectEmailPage" target="useCollectEmail"/>
+<edge source="ForgotPasswordPage" target="useForgotPassword"/>
+<edge source="HomePage" target="useCurrentUser"/>
+<edge source="HomePage" target="useLogin"/>
+<edge source="InstructorConversationDetailPage" target="useInstructorConversationDetail"/>
+<edge source="InstructorConversationsPage" target="useInstructorConversations"/>
+<edge source="InstructorCourseDetailPage" target="useCourseDetail"/>
+<edge source="InstructorCourseDetailPage" target="useDeleteCourse"/>
+<edge source="CourseHeader" target="useUpdateCourse"/>
+<edge source="SyllabusSection" target="useCreateSyllabusModule"/>
+<edge source="SyllabusSection" target="useUpdateSyllabusModule"/>
+<edge source="SyllabusSection" target="useDeleteSyllabusModule"/>
+<edge source="EnrollmentSection" target="useEnrolledStudents"/>
+<edge source="EnrollmentSection" target="useEnrollStudent"/>
+<edge source="EnrollmentSection" target="useBulkEnroll"/>
+<edge source="EnrollmentSection" target="useUnenrollStudent"/>
+<edge source="InstructorCoursesPage" target="useLogout"/>
+<edge source="InstructorCoursesPage" target="useCourses"/>
+<edge source="InstructorCoursesPage" target="useCreateCourse"/>
+<edge source="ProtectedRoute" target="useCurrentUser"/>
+<edge source="RequireInstructor" target="useCurrentUser"/>
+<edge source="RequireVerified" target="useCurrentUser"/>
+<edge source="ResetPasswordPage" target="useResetPassword"/>
+<edge source="VerifyEmailPage" target="useVerifyEmail"/>
+<edge source="isUniqueViolation" target="isUniqueViolation"/>
+<edge source="requireAuth" target="findSession"/>
+<edge source="requireAuth" target="touchSession"/>
+<edge source="requireAuth" target="findUserById"/>
+<edge source="requireAuth" target="toUserDto"/>
+<edge source="updateVisibility" target="findConversationByIdForUser"/>
+<edge source="updateVisibility" target="updateVisibility"/>
+<edge source="updateVisibility" target="toConversationSummary"/>
+<edge source="createCourse" target="createCourse"/>
+<edge source="createCourse" target="toCourseSummary"/>
+<edge source="updateCourse" target="updateCourse"/>
+<edge source="updateCourse" target="toCourseSummary"/>
+<edge source="updateCourse" target="requireOwnedCourse"/>
+<edge source="postMessage" target="writeSseEvent"/>
+<edge source="sendVerificationEmailIfDue" target="sendEmail"/>
+<edge source="sendVerificationEmailIfDue" target="verifyEmailEmail"/>
+<edge source="sendVerificationEmailIfDue" target="issueToken"/>
+<edge source="sendVerificationEmailIfDue" target="shouldIssueFreshToken"/>
+<edge source="login" target="createSession"/>
+<edge source="login" target="findUserByUsername"/>
+<edge source="login" target="findUserByEmail"/>
+<edge source="login" target="toUserDto"/>
+<edge source="login" target="sendVerificationEmailIfDue"/>
+<edge source="logout" target="deleteSession"/>
+<edge source="collectEmail" target="isUniqueViolation"/>
+<edge source="collectEmail" target="findUserById"/>
+<edge source="collectEmail" target="setEmail"/>
+<edge source="collectEmail" target="sendVerificationEmailIfDue"/>
+<edge source="verifyEmail" target="setEmailVerified"/>
+<edge source="verifyEmail" target="consumeToken"/>
+<edge source="forgotPassword" target="sendEmail"/>
+<edge source="forgotPassword" target="passwordResetEmail"/>
+<edge source="forgotPassword" target="findUserByEmail"/>
+<edge source="forgotPassword" target="issueToken"/>
+<edge source="resetPassword" target="setPassword"/>
+<edge source="resetPassword" target="consumeToken"/>
+<edge source="acceptInvite" target="createSession"/>
+<edge source="acceptInvite" target="findUserById"/>
+<edge source="acceptInvite" target="setPassword"/>
+<edge source="acceptInvite" target="toUserDto"/>
+<edge source="acceptInvite" target="consumeToken"/>
+<edge source="generateTitleSummary" target="getChatCompletion"/>
+<edge source="generateTitleSummary" target="updateTitle"/>
+<edge source="buildSystemPrompt" target="findCourseById"/>
+<edge source="buildSystemPrompt" target="listModulesForCourse"/>
+<edge source="startNewConversation" target="findCourseById"/>
+<edge source="startNewConversation" target="findEnrollment"/>
+<edge source="startNewConversation" target="generateTitleSummary"/>
+<edge source="continueConversation" target="findConversationByIdForUser"/>
+<edge source="continueConversation" target="createMessage"/>
+<edge source="listConversations" target="encodeCursor"/>
+<edge source="listConversations" target="decodeCursor"/>
+<edge source="listConversations" target="listConversationsForUser"/>
+<edge source="listConversations" target="listConversationsForInstructor"/>
+<edge source="canRead" target="findEnrollment"/>
+<edge source="getConversationDetail" target="findConversationById"/>
+<edge source="getConversationDetail" target="findConversationByIdForInstructor"/>
+<edge source="getConversationDetail" target="listMessagesForConversation"/>
+<edge source="getConversationDetail" target="toConversationSummary"/>
+<edge source="getConversationDetail" target="canRead"/>
+<edge source="getConversationDetail" target="toSummary"/>
+<edge source="requireOwnedCourse" target="findCourseByIdForInstructor"/>
+<edge source="listCourses" target="listCoursesForInstructor"/>
+<edge source="listEnrolledCourses" target="listCoursesForStudent"/>
+<edge source="getCourseDetail" target="countForCourse"/>
+<edge source="getCourseDetail" target="listModulesForCourse"/>
+<edge source="getCourseDetail" target="toCourseSummary"/>
+<edge source="getCourseDetail" target="requireOwnedCourse"/>
+<edge source="deleteCourse" target="softDeleteCourse"/>
+<edge source="deleteCourse" target="requireOwnedCourse"/>
+<edge source="createSyllabusModule" target="createModule"/>
+<edge source="createSyllabusModule" target="toSyllabusModuleDto"/>
+<edge source="createSyllabusModule" target="requireOwnedCourse"/>
+<edge source="updateSyllabusModule" target="findModuleByIdForCourse"/>
+<edge source="updateSyllabusModule" target="updateModule"/>
+<edge source="updateSyllabusModule" target="toSyllabusModuleDto"/>
+<edge source="updateSyllabusModule" target="requireOwnedCourse"/>
+<edge source="deleteSyllabusModule" target="findModuleByIdForCourse"/>
+<edge source="deleteSyllabusModule" target="deleteModule"/>
+<edge source="deleteSyllabusModule" target="requireOwnedCourse"/>
+<edge source="enrollStudent" target="isUniqueViolation"/>
+<edge source="enrollStudent" target="sendEmail"/>
+<edge source="enrollStudent" target="enrollmentInviteEmail"/>
+<edge source="enrollStudent" target="courseEnrollmentNotificationEmail"/>
+<edge source="enrollStudent" target="createEnrollment"/>
+<edge source="enrollStudent" target="createUser"/>
+<edge source="enrollStudent" target="findUserByEmail"/>
+<edge source="enrollStudent" target="issueToken"/>
+<edge source="enrollSingle" target="requireOwnedCourse"/>
+<edge source="enrollSingle" target="enrollStudent"/>
+<edge source="enrollBulk" target="requireOwnedCourse"/>
+<edge source="enrollBulk" target="enrollStudent"/>
+<edge source="enrollBulk" target="parseRow"/>
+<edge source="listEnrolledStudents" target="listStudentsForCourse"/>
+<edge source="listEnrolledStudents" target="requireOwnedCourse"/>
+<edge source="unenrollStudent" target="deleteEnrollment"/>
+<edge source="unenrollStudent" target="requireOwnedCourse"/>
+<edge source="issueToken" target="createToken"/>
+<edge source="issueToken" target="hashToken"/>
+<edge source="consumeToken" target="findValidToken"/>
+<edge source="consumeToken" target="markTokenUsed"/>
+<edge source="consumeToken" target="hashToken"/>
+<edge source="shouldIssueFreshToken" target="findLatestTokenForUser"/>
+</graph></graphml>

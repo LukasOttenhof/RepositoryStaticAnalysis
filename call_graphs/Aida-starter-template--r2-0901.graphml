@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="directed"><node id="parseSetPasswordToken"/>
+<node id="ChatApp"/>
+<node id="App"/>
+<node id="getParticipantKey"/>
+<node id="getMachineId"/>
+<node id="emit"/>
+<node id="flush"/>
+<node id="describeElement"/>
+<node id="AuthScreen"/>
+<node id="handleSubmit"/>
+<node id="parseLines"/>
+<node id="BatchEnrollForm"/>
+<node id="ChatWindow"/>
+<node id="handleSend"/>
+<node id="isStale"/>
+<node id="CourseList"/>
+<node id="handleCreate"/>
+<node id="handleDelete"/>
+<node id="CourseRoster"/>
+<node id="handleRemove"/>
+<node id="handleEnrolled"/>
+<node id="EnrollStudentForm"/>
+<node id="ForgotPasswordScreen"/>
+<node id="Header"/>
+<node id="InstructorApp"/>
+<node id="MarkdownMessage"/>
+<node id="MessageComposer"/>
+<node id="submit"/>
+<node id="handleKeyDown"/>
+<node id="SetPasswordScreen"/>
+<node id="Sidebar"/>
+<node id="startEditing"/>
+<node id="commitEdit"/>
+<node id="handleEditKeyDown"/>
+<node id="AuthProvider"/>
+<node id="useAuth"/>
+<node id="useConversations"/>
+<node id="useCourses"/>
+<node id="constructor"/>
+<node id="apiFetch"/>
+<node id="apiJson"/>
+<node id="login"/>
+<node id="logout"/>
+<node id="me"/>
+<node id="forgotPassword"/>
+<node id="checkResetToken"/>
+<node id="completePasswordReset"/>
+<node id="sendMessage"/>
+<node id="dispatchEvent"/>
+<node id="listConversations"/>
+<node id="getMessages"/>
+<node id="renameConversation"/>
+<node id="deleteConversation"/>
+<node id="listCourses"/>
+<node id="createCourse"/>
+<node id="getCourse"/>
+<node id="deleteCourse"/>
+<node id="enrollStudent"/>
+<node id="enrollStudentsBatch"/>
+<node id="removeStudent"/>
+<node id="formatRelativeTime"/>
+<node id="parseArgs"/>
+<node id="main"/>
+<node id="hashPassword"/>
+<node id="verifyPassword"/>
+<node id="generateTempPassword"/>
+<node id="createSession"/>
+<node id="destroySession"/>
+<node id="setSessionCookie"/>
+<node id="clearSessionCookie"/>
+<node id="toAuthUser"/>
+<node id="requireAuth"/>
+<node id="requireInstructor"/>
+<node id="createPasswordResetToken"/>
+<node id="findValidResetToken"/>
+<node id="markResetTokenUsed"/>
+<node id="postToEmailService"/>
+<node id="sendEnrollmentEmail"/>
+<node id="sendPasswordResetEmail"/>
+<node id="generateTitle"/>
+<node id="deriveTitle"/>
+<node id="buildSetupLink"/>
+<node id="enrollStudentInCourse"/>
+<node id="sendEvent"/>
+<node id="getOwnedConversation"/>
+<node id="loadHistory"/>
+<node id="streamAssistantReply"/>
+<node id="getOwnedCourse"/>
+<edge source="ChatApp" target="useConversations"/>
+<edge source="App" target="parseSetPasswordToken"/>
+<edge source="App" target="useAuth"/>
+<edge source="emit" target="getParticipantKey"/>
+<edge source="emit" target="flush"/>
+<edge source="flush" target="getParticipantKey"/>
+<edge source="AuthScreen" target="useAuth"/>
+<edge source="handleSubmit" target="parseLines"/>
+<edge source="handleSubmit" target="login"/>
+<edge source="handleSubmit" target="forgotPassword"/>
+<edge source="handleSubmit" target="completePasswordReset"/>
+<edge source="handleSubmit" target="enrollStudent"/>
+<edge source="handleSubmit" target="enrollStudentsBatch"/>
+<edge source="handleSend" target="sendMessage"/>
+<edge source="handleRemove" target="removeStudent"/>
+<edge source="ForgotPasswordScreen" target="useAuth"/>
+<edge source="Header" target="useAuth"/>
+<edge source="InstructorApp" target="useCourses"/>
+<edge source="handleKeyDown" target="submit"/>
+<edge source="SetPasswordScreen" target="useAuth"/>
+<edge source="handleEditKeyDown" target="commitEdit"/>
+<edge source="apiJson" target="apiFetch"/>
+<edge source="login" target="apiJson"/>
+<edge source="logout" target="apiFetch"/>
+<edge source="me" target="apiJson"/>
+<edge source="forgotPassword" target="apiJson"/>
+<edge source="checkResetToken" target="apiJson"/>
+<edge source="completePasswordReset" target="apiJson"/>
+<edge source="sendMessage" target="dispatchEvent"/>
+<edge source="listConversations" target="apiJson"/>
+<edge source="getMessages" target="apiJson"/>
+<edge source="renameConversation" target="apiJson"/>
+<edge source="deleteConversation" target="apiFetch"/>
+<edge source="listCourses" target="apiJson"/>
+<edge source="createCourse" target="apiJson"/>
+<edge source="getCourse" target="apiJson"/>
+<edge source="deleteCourse" target="apiFetch"/>
+<edge source="enrollStudent" target="apiJson"/>
+<edge source="enrollStudentsBatch" target="apiJson"/>
+<edge source="enrollStudentsBatch" target="enrollStudentInCourse"/>
+<edge source="removeStudent" target="apiFetch"/>
+<edge source="main" target="parseArgs"/>
+<edge source="main" target="hashPassword"/>
+<edge source="main" target="generateTempPassword"/>
+<edge source="requireAuth" target="destroySession"/>
+<edge source="requireAuth" target="setSessionCookie"/>
+<edge source="requireAuth" target="clearSessionCookie"/>
+<edge source="requireAuth" target="toAuthUser"/>
+<edge source="sendEnrollmentEmail" target="postToEmailService"/>
+<edge source="sendPasswordResetEmail" target="postToEmailService"/>
+<edge source="enrollStudentInCourse" target="hashPassword"/>
+<edge source="enrollStudentInCourse" target="generateTempPassword"/>
+<edge source="enrollStudentInCourse" target="createPasswordResetToken"/>
+<edge source="enrollStudentInCourse" target="sendEnrollmentEmail"/>
+<edge source="enrollStudentInCourse" target="sendPasswordResetEmail"/>
+<edge source="enrollStudentInCourse" target="buildSetupLink"/>
+<edge source="streamAssistantReply" target="sendEvent"/>
+</graph></graphml>

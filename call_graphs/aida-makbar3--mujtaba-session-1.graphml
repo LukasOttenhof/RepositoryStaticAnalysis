@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="directed"><node id="getParticipantKey"/>
+<node id="getMachineId"/>
+<node id="emit"/>
+<node id="flush"/>
+<node id="describeElement"/>
+<node id="ChatView"/>
+<node id="submit"/>
+<node id="CodeBlock"/>
+<node id="ConversationSidebar"/>
+<node id="getTextContent"/>
+<node id="pre"/>
+<node id="code"/>
+<node id="MessageBubble"/>
+<node id="useCurrentUser"/>
+<node id="useSignup"/>
+<node id="useLogin"/>
+<node id="useLogout"/>
+<node id="parseSseFrame"/>
+<node id="useChatStream"/>
+<node id="conversationDetailQueryKey"/>
+<node id="useConversationDetail"/>
+<node id="useConversations"/>
+<node id="constructor"/>
+<node id="apiFetch"/>
+<node id="ChatPage"/>
+<node id="HomePage"/>
+<node id="ProtectedRoute"/>
+<node id="Button"/>
+<node id="Input"/>
+<node id="Label"/>
+<node id="Textarea"/>
+<node id="parseContentChunk"/>
+<node id="notFoundHandler"/>
+<node id="errorHandler"/>
+<node id="requireAuth"/>
+<node id="createConversation"/>
+<node id="findConversationByIdForUser"/>
+<node id="listConversationsForUser"/>
+<node id="createMessage"/>
+<node id="listMessagesForConversation"/>
+<node id="createSession"/>
+<node id="findSession"/>
+<node id="touchSession"/>
+<node id="deleteSession"/>
+<node id="createUser"/>
+<node id="findUserByUsername"/>
+<node id="findUserById"/>
+<node id="setSessionCookie"/>
+<node id="postMessage"/>
+<node id="writeSseEvent"/>
+<node id="toUserDto"/>
+<node id="signup"/>
+<node id="login"/>
+<node id="logout"/>
+<node id="isUniqueViolation"/>
+<node id="deriveTitle"/>
+<node id="startNewConversation"/>
+<node id="continueConversation"/>
+<node id="toConversationSummary"/>
+<node id="toMessageDto"/>
+<node id="encodeCursor"/>
+<node id="decodeCursor"/>
+<node id="listConversations"/>
+<node id="getConversationDetail"/>
+<edge source="emit" target="getParticipantKey"/>
+<edge source="emit" target="flush"/>
+<edge source="flush" target="getParticipantKey"/>
+<edge source="ChatView" target="useChatStream"/>
+<edge source="ChatView" target="useConversationDetail"/>
+<edge source="ConversationSidebar" target="useConversations"/>
+<edge source="pre" target="getTextContent"/>
+<edge source="useConversationDetail" target="conversationDetailQueryKey"/>
+<edge source="HomePage" target="useCurrentUser"/>
+<edge source="HomePage" target="useSignup"/>
+<edge source="HomePage" target="useLogin"/>
+<edge source="ProtectedRoute" target="useCurrentUser"/>
+<edge source="requireAuth" target="findSession"/>
+<edge source="requireAuth" target="touchSession"/>
+<edge source="requireAuth" target="findUserById"/>
+<edge source="requireAuth" target="toUserDto"/>
+<edge source="postMessage" target="writeSseEvent"/>
+<edge source="signup" target="toUserDto"/>
+<edge source="signup" target="isUniqueViolation"/>
+<edge source="login" target="createSession"/>
+<edge source="login" target="findUserByUsername"/>
+<edge source="login" target="toUserDto"/>
+<edge source="logout" target="deleteSession"/>
+<edge source="isUniqueViolation" target="isUniqueViolation"/>
+<edge source="continueConversation" target="findConversationByIdForUser"/>
+<edge source="continueConversation" target="createMessage"/>
+<edge source="listConversations" target="listConversationsForUser"/>
+<edge source="listConversations" target="encodeCursor"/>
+<edge source="listConversations" target="decodeCursor"/>
+<edge source="getConversationDetail" target="findConversationByIdForUser"/>
+<edge source="getConversationDetail" target="listMessagesForConversation"/>
+<edge source="getConversationDetail" target="toConversationSummary"/>
+</graph></graphml>

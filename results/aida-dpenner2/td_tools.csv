@@ -1,0 +1,6 @@
+branch,code_files,loc,files_over_400_loc,mk_satd,mk_any,mk_ts_ignore,mk_eslint_disable,mk_non_null,mk_console_log,jscpd_clones,jscpd_dup_pct,dep_modules,dep_edges,dep_cycles,dep_modules_in_cycles,dep_largest_cycle,dep_propagation_cost_pct,dep_max_fan_in,dep_max_fan_out,dep_hub_modules,dep_orphans,dep_cross_package_edges,semgrep_findings,semgrep_rules,committed_env_files,committed_venv_files
+main,9,354,0,0,0,0,0,0,1,1,3.08,12,8,0,0,0,16.7,1,4,0,2,0,0,,1,0
+s1,28,1260,0,0,0,0,0,0,1,2,1.39,28,34,0,0,0,11.9,4,5,0,1,2,0,,1,0
+s2,45,3420,0,0,0,0,2,0,1,17,4.79,45,84,0,0,0,11.2,11,12,0,1,7,0,,1,0
+s3,46,3729,0,1,0,0,2,0,1,18,4.75,45,84,0,0,0,11.2,11,12,0,1,7,0,,1,0
+s4,76,6402,1,1,0,0,4,0,4,30,3.76,75,161,1,2,2,8.8,20,15,1,1,12,0,,1,3255

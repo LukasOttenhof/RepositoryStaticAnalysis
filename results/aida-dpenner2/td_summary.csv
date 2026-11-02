@@ -1,0 +1,9 @@
+,,main,s1,s2,s3,s4,change s1 -> s4
+,lines of code,354.0,1260.0,3420.0,3729.0,6402.0,5142.0
+SonarQube,tech debt min / KLOC,0.0,0.0,1.46,1.34,6.25,6.25
+SonarQube,cognitive cx / KLOC,39.55,88.89,86.26,113.17,100.75,11.86
+ESLint,smells / KLOC,0.0,4.76,5.56,5.1,5.47,0.71
+ESLint,% functions cx > 10,0.0,1.8,2.4,2.4,1.8,0.0
+Sonargraph,NCCD,0.51,0.92,1.18,1.18,1.47,0.55
+Sonargraph,files in cycles,0.0,0.0,0.0,0.0,2.0,2.0
+Sonargraph,structural debt / KLOC,0.0,19.05,14.62,13.41,11.56,-7.49

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="directed"><node id="App"/>
+<node id="getParticipantKey"/>
+<node id="getMachineId"/>
+<node id="emit"/>
+<node id="flush"/>
+<node id="describeElement"/>
+<node id="useAuth"/>
+<node id="AuthProvider"/>
+<node id="ProtectedRoute"/>
+<node id="ChatInput"/>
+<node id="submit"/>
+<node id="handleSubmit"/>
+<node id="handleKeyDown"/>
+<node id="MessageBubble"/>
+<node id="Sidebar"/>
+<node id="apiUrl"/>
+<node id="constructor"/>
+<node id="setUnauthorizedListener"/>
+<node id="request"/>
+<node id="signup"/>
+<node id="login"/>
+<node id="logout"/>
+<node id="fetchCurrentUser"/>
+<node id="listConversations"/>
+<node id="createConversation"/>
+<node id="getConversation"/>
+<node id="streamAssistantMessage"/>
+<node id="ChatPage"/>
+<node id="load"/>
+<node id="handleNewChat"/>
+<node id="handleSend"/>
+<node id="HomePage"/>
+<node id="assertLlmConfigured"/>
+<node id="toSummary"/>
+<node id="toMessage"/>
+<node id="getConversationForUser"/>
+<node id="conversationBelongsToUser"/>
+<node id="titleFromMessage"/>
+<node id="appendMessage"/>
+<node id="getConversationHistory"/>
+<node id="createUser"/>
+<node id="getUserByUsername"/>
+<node id="getUserById"/>
+<node id="verifyPassword"/>
+<node id="requireAuth"/>
+<node id="send"/>
+<node id="toUpstreamMessages"/>
+<node id="streamAssistantReply"/>
+<edge source="emit" target="getParticipantKey"/>
+<edge source="emit" target="flush"/>
+<edge source="flush" target="getParticipantKey"/>
+<edge source="ProtectedRoute" target="useAuth"/>
+<edge source="handleSubmit" target="submit"/>
+<edge source="handleSubmit" target="signup"/>
+<edge source="handleSubmit" target="login"/>
+<edge source="handleKeyDown" target="submit"/>
+<edge source="Sidebar" target="useAuth"/>
+<edge source="request" target="apiUrl"/>
+<edge source="signup" target="request"/>
+<edge source="login" target="request"/>
+<edge source="logout" target="request"/>
+<edge source="fetchCurrentUser" target="request"/>
+<edge source="listConversations" target="request"/>
+<edge source="createConversation" target="request"/>
+<edge source="createConversation" target="toSummary"/>
+<edge source="getConversation" target="request"/>
+<edge source="streamAssistantMessage" target="apiUrl"/>
+<edge source="load" target="getConversation"/>
+<edge source="handleNewChat" target="createConversation"/>
+<edge source="handleSend" target="streamAssistantMessage"/>
+<edge source="HomePage" target="useAuth"/>
+<edge source="getConversationForUser" target="toSummary"/>
+<edge source="appendMessage" target="toMessage"/>
+<edge source="appendMessage" target="titleFromMessage"/>
+<edge source="streamAssistantReply" target="assertLlmConfigured"/>
+<edge source="streamAssistantReply" target="toUpstreamMessages"/>
+</graph></graphml>

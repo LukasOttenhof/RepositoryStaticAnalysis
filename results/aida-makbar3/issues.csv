@@ -1,0 +1,9 @@
+branch,severity,type,file,line,rule,effort,message
+mujtaba/session-1,MAJOR,CODE_SMELL,apps/web/src/components/ui/label.tsx,6,typescript:S6853,5min,A form label must be associated with a control.
+mujtaba/session-1,MINOR,VULNERABILITY,Dockerfile,24,docker:S6471,15min,"The ""node"" image runs with ""root"" as the default user. Make sure it is safe here."
+mujtaba/session-2,MAJOR,CODE_SMELL,apps/api/src/services/chatService.ts,48,typescript:S8786,20min,"Simplify this regular expression to reduce its runtime, as it has super-linear performance due to backtracking."
+mujtaba/session-2,MAJOR,CODE_SMELL,apps/web/src/components/ui/label.tsx,6,typescript:S6853,5min,A form label must be associated with a control.
+mujtaba/session-2,MINOR,VULNERABILITY,Dockerfile,24,docker:S6471,15min,"The ""node"" image runs with ""root"" as the default user. Make sure it is safe here."
+mujtaba/session-3,MAJOR,CODE_SMELL,apps/api/src/services/chatService.ts,53,typescript:S8786,20min,"Simplify this regular expression to reduce its runtime, as it has super-linear performance due to backtracking."
+mujtaba/session-3,MAJOR,CODE_SMELL,apps/web/src/components/ui/label.tsx,6,typescript:S6853,5min,A form label must be associated with a control.
+mujtaba/session-3,MINOR,VULNERABILITY,Dockerfile,24,docker:S6471,15min,"The ""node"" image runs with ""root"" as the default user. Make sure it is safe here."

@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="directed"><node id="App"/>
+<node id="getParticipantKey"/>
+<node id="getMachineId"/>
+<node id="emit"/>
+<node id="flush"/>
+<node id="describeElement"/>
+<node id="useAuth"/>
+<node id="AuthProvider"/>
+<node id="ProtectedRoute"/>
+<node id="RequireRole"/>
+<node id="ChatInput"/>
+<node id="submit"/>
+<node id="handleSubmit"/>
+<node id="handleKeyDown"/>
+<node id="MessageBubble"/>
+<node id="Sidebar"/>
+<node id="handleNewChatClick"/>
+<node id="handleConfirmPick"/>
+<node id="apiUrl"/>
+<node id="constructor"/>
+<node id="setUnauthorizedListener"/>
+<node id="request"/>
+<node id="signup"/>
+<node id="login"/>
+<node id="logout"/>
+<node id="fetchCurrentUser"/>
+<node id="setAccountEmail"/>
+<node id="resendVerificationEmail"/>
+<node id="confirmEmailVerification"/>
+<node id="forgotPassword"/>
+<node id="resetPassword"/>
+<node id="completeAccountSetup"/>
+<node id="listConversations"/>
+<node id="createConversation"/>
+<node id="getConversation"/>
+<node id="setConversationVisibility"/>
+<node id="getPublicConversation"/>
+<node id="streamAssistantMessage"/>
+<node id="listCourses"/>
+<node id="createCourse"/>
+<node id="getCourse"/>
+<node id="updateCourse"/>
+<node id="deleteCourse"/>
+<node id="updateSyllabus"/>
+<node id="listCourseStudents"/>
+<node id="listCourseQuestions"/>
+<node id="enrollStudent"/>
+<node id="enrollStudentsBulk"/>
+<node id="formatConversationTime"/>
+<node id="AccountSetupPage"/>
+<node id="ChatPage"/>
+<node id="load"/>
+<node id="handleNewChat"/>
+<node id="handleToggleVisibility"/>
+<node id="handleSend"/>
+<node id="ForgotPasswordPage"/>
+<node id="HomePage"/>
+<node id="ResetPasswordPage"/>
+<node id="SharedConversationPage"/>
+<node id="StudentCoursesPage"/>
+<node id="VerifyEmailPage"/>
+<node id="handleSetEmail"/>
+<node id="handleResend"/>
+<node id="parseBulkRows"/>
+<node id="CourseDetailPage"/>
+<node id="refresh"/>
+<node id="handleSaveInfo"/>
+<node id="handleSaveSyllabus"/>
+<node id="handleDelete"/>
+<node id="handleEnrollSingle"/>
+<node id="handleEnrollBulk"/>
+<node id="CoursesPage"/>
+<node id="handleCreate"/>
+<node id="assertLlmConfigured"/>
+<node id="assertEmailServiceConfigured"/>
+<node id="toSummary"/>
+<node id="toMessage"/>
+<node id="getConversationForUser"/>
+<node id="conversationBelongsToUser"/>
+<node id="getConversationCourseId"/>
+<node id="titleFromMessage"/>
+<node id="appendMessage"/>
+<node id="setConversationSummaryTitle"/>
+<node id="getConversationHistory"/>
+<node id="toCourse"/>
+<node id="listCoursesForInstructor"/>
+<node id="listCoursesForStudent"/>
+<node id="getCourseById"/>
+<node id="getCourseOwnedByInstructor"/>
+<node id="setCourseSyllabus"/>
+<node id="isStudentEnrolled"/>
+<node id="listStudentsForCourse"/>
+<node id="listRecentQuestionsForCourse"/>
+<node id="hasColumn"/>
+<node id="columnInfo"/>
+<node id="hashToken"/>
+<node id="createToken"/>
+<node id="consumeToken"/>
+<node id="createUser"/>
+<node id="createPendingStudent"/>
+<node id="getUserByUsername"/>
+<node id="getUserById"/>
+<node id="getUserByEmail"/>
+<node id="setUserEmail"/>
+<node id="markEmailVerified"/>
+<node id="setPassword"/>
+<node id="recordReminderSent"/>
+<node id="getUsersNeedingVerificationReminder"/>
+<node id="verifyPassword"/>
+<node id="toAuthenticatedUser"/>
+<node id="requireAuth"/>
+<node id="requireActiveAccount"/>
+<node id="requireRole"/>
+<node id="send"/>
+<node id="enrollOne"/>
+<node id="studentIsEnrolledInCourse"/>
+<node id="sendEmail"/>
+<node id="sendVerificationEmail"/>
+<node id="sendPasswordResetEmail"/>
+<node id="sendEnrollmentEmailForNewAccount"/>
+<node id="sendEnrollmentNoticeEmail"/>
+<node id="sendVerificationReminderEmail"/>
+<node id="buildSystemPrompt"/>
+<node id="toUpstreamMessages"/>
+<node id="streamAssistantReply"/>
+<node id="summarizeTitle"/>
+<node id="runReminderSweep"/>
+<node id="startVerificationReminderJob"/>
+<edge source="emit" target="getParticipantKey"/>
+<edge source="emit" target="flush"/>
+<edge source="flush" target="getParticipantKey"/>
+<edge source="ProtectedRoute" target="useAuth"/>
+<edge source="RequireRole" target="useAuth"/>
+<edge source="handleSubmit" target="submit"/>
+<edge source="handleSubmit" target="signup"/>
+<edge source="handleSubmit" target="login"/>
+<edge source="handleSubmit" target="forgotPassword"/>
+<edge source="handleSubmit" target="resetPassword"/>
+<edge source="handleSubmit" target="completeAccountSetup"/>
+<edge source="handleSubmit" target="refresh"/>
+<edge source="handleKeyDown" target="submit"/>
+<edge source="Sidebar" target="useAuth"/>
+<edge source="request" target="apiUrl"/>
+<edge source="signup" target="request"/>
+<edge source="login" target="request"/>
+<edge source="logout" target="request"/>
+<edge source="fetchCurrentUser" target="request"/>
+<edge source="setAccountEmail" target="request"/>
+<edge source="resendVerificationEmail" target="request"/>
+<edge source="confirmEmailVerification" target="request"/>
+<edge source="forgotPassword" target="request"/>
+<edge source="resetPassword" target="request"/>
+<edge source="completeAccountSetup" target="request"/>
+<edge source="listConversations" target="request"/>
+<edge source="createConversation" target="request"/>
+<edge source="createConversation" target="toSummary"/>
+<edge source="getConversation" target="request"/>
+<edge source="setConversationVisibility" target="request"/>
+<edge source="getPublicConversation" target="request"/>
+<edge source="getPublicConversation" target="toSummary"/>
+<edge source="streamAssistantMessage" target="apiUrl"/>
+<edge source="listCourses" target="request"/>
+<edge source="createCourse" target="request"/>
+<edge source="createCourse" target="toCourse"/>
+<edge source="getCourse" target="request"/>
+<edge source="updateCourse" target="request"/>
+<edge source="deleteCourse" target="request"/>
+<edge source="updateSyllabus" target="request"/>
+<edge source="listCourseStudents" target="request"/>
+<edge source="listCourseQuestions" target="request"/>
+<edge source="enrollStudent" target="request"/>
+<edge source="enrollStudent" target="isStudentEnrolled"/>
+<edge source="enrollStudentsBulk" target="request"/>
+<edge source="AccountSetupPage" target="useAuth"/>
+<edge source="load" target="getConversation"/>
+<edge source="handleNewChat" target="createConversation"/>
+<edge source="handleToggleVisibility" target="setConversationVisibility"/>
+<edge source="handleSend" target="streamAssistantMessage"/>
+<edge source="HomePage" target="useAuth"/>
+<edge source="VerifyEmailPage" target="useAuth"/>
+<edge source="handleSetEmail" target="setAccountEmail"/>
+<edge source="handleResend" target="resendVerificationEmail"/>
+<edge source="refresh" target="listCourses"/>
+<edge source="refresh" target="getCourse"/>
+<edge source="refresh" target="listCourseStudents"/>
+<edge source="refresh" target="listCourseQuestions"/>
+<edge source="handleSaveInfo" target="updateCourse"/>
+<edge source="handleSaveInfo" target="refresh"/>
+<edge source="handleSaveSyllabus" target="updateSyllabus"/>
+<edge source="handleSaveSyllabus" target="refresh"/>
+<edge source="handleDelete" target="deleteCourse"/>
+<edge source="handleEnrollSingle" target="enrollStudent"/>
+<edge source="handleEnrollSingle" target="refresh"/>
+<edge source="handleEnrollBulk" target="enrollStudentsBulk"/>
+<edge source="handleEnrollBulk" target="parseBulkRows"/>
+<edge source="handleEnrollBulk" target="refresh"/>
+<edge source="CoursesPage" target="useAuth"/>
+<edge source="handleCreate" target="createCourse"/>
+<edge source="handleCreate" target="refresh"/>
+<edge source="getConversationForUser" target="toSummary"/>
+<edge source="appendMessage" target="toMessage"/>
+<edge source="appendMessage" target="titleFromMessage"/>
+<edge source="toCourse" target="toSummary"/>
+<edge source="getCourseById" target="toCourse"/>
+<edge source="getCourseOwnedByInstructor" target="toCourse"/>
+<edge source="createToken" target="hashToken"/>
+<edge source="consumeToken" target="hashToken"/>
+<edge source="requireActiveAccount" target="getUserById"/>
+<edge source="enrollOne" target="enrollStudent"/>
+<edge source="enrollOne" target="createToken"/>
+<edge source="enrollOne" target="createPendingStudent"/>
+<edge source="enrollOne" target="getUserByEmail"/>
+<edge source="enrollOne" target="sendEnrollmentEmailForNewAccount"/>
+<edge source="enrollOne" target="sendEnrollmentNoticeEmail"/>
+<edge source="studentIsEnrolledInCourse" target="isStudentEnrolled"/>
+<edge source="sendEmail" target="assertEmailServiceConfigured"/>
+<edge source="sendVerificationEmail" target="sendEmail"/>
+<edge source="sendPasswordResetEmail" target="sendEmail"/>
+<edge source="sendEnrollmentEmailForNewAccount" target="sendEmail"/>
+<edge source="sendEnrollmentNoticeEmail" target="sendEmail"/>
+<edge source="sendVerificationReminderEmail" target="sendEmail"/>
+<edge source="toUpstreamMessages" target="buildSystemPrompt"/>
+<edge source="streamAssistantReply" target="assertLlmConfigured"/>
+<edge source="streamAssistantReply" target="toUpstreamMessages"/>
+<edge source="summarizeTitle" target="assertLlmConfigured"/>
+<edge source="runReminderSweep" target="createToken"/>
+<edge source="runReminderSweep" target="recordReminderSent"/>
+<edge source="runReminderSweep" target="getUsersNeedingVerificationReminder"/>
+<edge source="runReminderSweep" target="sendVerificationReminderEmail"/>
+</graph></graphml>

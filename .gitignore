@@ -1,5 +1,6 @@
 # SonarQube analysis artifacts
 .sonar-token
+.sonargraph-activation
 .tools/
 .scannerwork/
 

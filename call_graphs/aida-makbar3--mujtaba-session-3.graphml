@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="directed"><node id="get_signature"/>
+<node id="serialize_value"/>
+<node id="_sandboxed_cwd"/>
+<node id="safe_open"/>
+<node id="_run_in_child"/>
+<node id="tracer"/>
+<node id="extract_objects"/>
+<node id="process_value"/>
+<node id="run_user_code"/>
+<node id="_run_output_only_in_child"/>
+<node id="run_user_code_output_only"/>
+<node id="trace_code"/>
+<node id="run_code"/>
+<node id="getParticipantKey"/>
+<node id="getMachineId"/>
+<node id="emit"/>
+<node id="flush"/>
+<node id="describeElement"/>
+<node id="ChatView"/>
+<node id="submit"/>
+<node id="ShareControl"/>
+<node id="CodeBlock"/>
+<node id="ConversationSidebar"/>
+<node id="ExpandableContent"/>
+<node id="getTextContent"/>
+<node id="pre"/>
+<node id="code"/>
+<node id="MessageBubble"/>
+<node id="PythonCodeBlock"/>
+<node id="TraceViewer"/>
+<node id="VariablesPanel"/>
+<node id="VariableValue"/>
+<node id="useCurrentUser"/>
+<node id="useLogin"/>
+<node id="useLogout"/>
+<node id="useCollectEmail"/>
+<node id="useVerifyEmail"/>
+<node id="useForgotPassword"/>
+<node id="useResetPassword"/>
+<node id="useAcceptInvite"/>
+<node id="parseSseFrame"/>
+<node id="extractErrorMessage"/>
+<node id="useChatStream"/>
+<node id="useRunCode"/>
+<node id="useTraceCode"/>
+<node id="conversationDetailQueryKey"/>
+<node id="useConversationDetail"/>
+<node id="useConversations"/>
+<node id="shareStatusQueryKey"/>
+<node id="useShareStatus"/>
+<node id="useCreateShare"/>
+<node id="useDeactivateShare"/>
+<node id="useSharedConversation"/>
+<node id="courseQueryKey"/>
+<node id="enrollmentsQueryKey"/>
+<node id="materialsQueryKey"/>
+<node id="useCourses"/>
+<node id="useCourseDetail"/>
+<node id="useCreateCourse"/>
+<node id="useUpdateCourse"/>
+<node id="useDeleteCourse"/>
+<node id="useDisableCourse"/>
+<node id="useEnableCourse"/>
+<node id="useMaterials"/>
+<node id="useCreateMarkdownMaterial"/>
+<node id="useUpdateMarkdownMaterial"/>
+<node id="useCreateExternalLinkMaterial"/>
+<node id="useUpdateExternalLinkMaterial"/>
+<node id="useCreateSyllabusTopic"/>
+<node id="useUpdateSyllabusTopic"/>
+<node id="useImportSyllabus"/>
+<node id="useDeleteMaterial"/>
+<node id="useEnrolledStudents"/>
+<node id="useEnrollStudent"/>
+<node id="useBulkEnroll"/>
+<node id="useUnenrollStudent"/>
+<node id="tasQueryKey"/>
+<node id="useTas"/>
+<node id="useAddTa"/>
+<node id="useRemoveTa"/>
+<node id="useInstructorConversations"/>
+<node id="useInstructorConversationDetail"/>
+<node id="useMyCourses"/>
+<node id="useMyTaCourses"/>
+<node id="constructor"/>
+<node id="apiFetch"/>
+<node id="formatConversationTimestamp"/>
+<node id="materialTypeLabel"/>
+<node id="AcceptInvitePage"/>
+<node id="ChatPage"/>
+<node id="CheckEmailPage"/>
+<node id="CollectEmailPage"/>
+<node id="ForgotPasswordPage"/>
+<node id="HomePage"/>
+<node id="InstructorConversationDetailPage"/>
+<node id="InstructorConversationsPage"/>
+<node id="InstructorCourseDetailPage"/>
+<node id="CourseHeader"/>
+<node id="MaterialsSection"/>
+<node id="MaterialEditForm"/>
+<node id="AddMarkdownMaterialForm"/>
+<node id="MarkdownMaterialForm"/>
+<node id="AddExternalLinkMaterialForm"/>
+<node id="ExternalLinkMaterialForm"/>
+<node id="AddSyllabusTopicForm"/>
+<node id="SyllabusTopicForm"/>
+<node id="SyllabusImportForm"/>
+<node id="onSubmit"/>
+<node id="EnrollmentSection"/>
+<node id="TaSection"/>
+<node id="InstructorCoursesPage"/>
+<node id="ProtectedRoute"/>
+<node id="RequireInstructor"/>
+<node id="RequireTa"/>
+<node id="RequireVerified"/>
+<node id="ResetPasswordPage"/>
+<node id="SharedConversationPage"/>
+<node id="TaCourseMaterialsPage"/>
+<node id="TaCoursesPage"/>
+<node id="VerifyEmailPage"/>
+<node id="Button"/>
+<node id="Input"/>
+<node id="Label"/>
+<node id="Textarea"/>
+<node id="isUniqueViolation"/>
+<node id="upsertUser"/>
+<node id="ensureMember"/>
+<node id="sendEmail"/>
+<node id="enrollmentInviteEmail"/>
+<node id="courseEnrollmentNotificationEmail"/>
+<node id="taInviteEmail"/>
+<node id="courseTaNotificationEmail"/>
+<node id="verifyEmailEmail"/>
+<node id="passwordResetEmail"/>
+<node id="encodeCursor"/>
+<node id="decodeCursor"/>
+<node id="getChatCompletion"/>
+<node id="parseContentChunk"/>
+<node id="embed"/>
+<node id="notFoundHandler"/>
+<node id="errorHandler"/>
+<node id="requireAuth"/>
+<node id="requireRole"/>
+<node id="requireVerified"/>
+<node id="createConversation"/>
+<node id="updateTitle"/>
+<node id="findConversationByIdForUser"/>
+<node id="findConversationById"/>
+<node id="listConversationsForUser"/>
+<node id="findShareByConversationId"/>
+<node id="findActiveShareByTokenHash"/>
+<node id="upsertShare"/>
+<node id="deactivateShare"/>
+<node id="createCourse"/>
+<node id="listCoursesForInstructor"/>
+<node id="findCourseByIdForInstructor"/>
+<node id="findCourseById"/>
+<node id="listCoursesForStudent"/>
+<node id="listCoursesForTa"/>
+<node id="updateCourse"/>
+<node id="softDeleteCourse"/>
+<node id="setDisabled"/>
+<node id="countForCourse"/>
+<node id="createEnrollment"/>
+<node id="listStudentsForCourse"/>
+<node id="findEnrollment"/>
+<node id="deleteEnrollment"/>
+<node id="createTaMembership"/>
+<node id="findTaMembership"/>
+<node id="listTasForCourse"/>
+<node id="listConversationsForInstructor"/>
+<node id="findConversationByIdForInstructor"/>
+<node id="replaceChunks"/>
+<node id="listChunksForMaterial"/>
+<node id="searchChunks"/>
+<node id="createMaterial"/>
+<node id="listMaterialsForCourse"/>
+<node id="findMaterialByIdForCourse"/>
+<node id="updateMaterial"/>
+<node id="deleteMaterial"/>
+<node id="listSyllabusMaterialsForCourse"/>
+<node id="createMessage"/>
+<node id="listMessagesForConversation"/>
+<node id="countMessagesForConversation"/>
+<node id="listFirstMessagesForConversation"/>
+<node id="createSession"/>
+<node id="findSession"/>
+<node id="touchSession"/>
+<node id="deleteSession"/>
+<node id="createToken"/>
+<node id="findValidToken"/>
+<node id="findLatestTokenForUser"/>
+<node id="markTokenUsed"/>
+<node id="createUser"/>
+<node id="findUserByUsername"/>
+<node id="findUserByEmail"/>
+<node id="findUserById"/>
+<node id="setEmail"/>
+<node id="setEmailVerified"/>
+<node id="setPassword"/>
+<node id="setSessionCookie"/>
+<node id="postMessage"/>
+<node id="writeSseEvent"/>
+<node id="toUserDto"/>
+<node id="sendVerificationEmailIfDue"/>
+<node id="login"/>
+<node id="logout"/>
+<node id="collectEmail"/>
+<node id="verifyEmail"/>
+<node id="forgotPassword"/>
+<node id="resetPassword"/>
+<node id="acceptInvite"/>
+<node id="generateTitleSummary"/>
+<node id="buildSystemPrompt"/>
+<node id="startNewConversation"/>
+<node id="continueConversation"/>
+<node id="wordCount"/>
+<node id="splitOversizedParagraph"/>
+<node id="chunkMarkdown"/>
+<node id="buildBody"/>
+<node id="extractDetail"/>
+<node id="callService"/>
+<node id="runCode"/>
+<node id="traceCode"/>
+<node id="toConversationSummary"/>
+<node id="toMessageDto"/>
+<node id="listConversations"/>
+<node id="getConversationDetail"/>
+<node id="hashToken"/>
+<node id="requireOwnedConversation"/>
+<node id="createShare"/>
+<node id="getShareStatus"/>
+<node id="getSharedConversation"/>
+<node id="toCourseSummary"/>
+<node id="requireOwnedCourse"/>
+<node id="listCourses"/>
+<node id="listEnrolledCourses"/>
+<node id="listTaCourses"/>
+<node id="requireOwnedCourseOrTaMember"/>
+<node id="getCourseDetail"/>
+<node id="deleteCourse"/>
+<node id="disableCourse"/>
+<node id="enableCourse"/>
+<node id="extractTitle"/>
+<node id="stripNoiseElements"/>
+<node id="extractSameOriginLinks"/>
+<node id="fetchPage"/>
+<node id="crawlSite"/>
+<node id="concatenatePages"/>
+<node id="enrollStudent"/>
+<node id="enrollSingle"/>
+<node id="parseRow"/>
+<node id="enrollBulk"/>
+<node id="listEnrolledStudents"/>
+<node id="unenrollStudent"/>
+<node id="toSummary"/>
+<node id="toMaterialDto"/>
+<node id="renderTopicMarkdown"/>
+<node id="chunkAndEmbed"/>
+<node id="chunkAndEmbedOrRollback"/>
+<node id="crawlAndEmbed"/>
+<node id="createMarkdownMaterial"/>
+<node id="createSyllabusTopic"/>
+<node id="createExternalLinkMaterial"/>
+<node id="importSyllabus"/>
+<node id="listMaterials"/>
+<node id="requireMaterial"/>
+<node id="getMaterialForDownload"/>
+<node id="getMaterialType"/>
+<node id="replaceMarkdownMaterial"/>
+<node id="replaceSyllabusTopic"/>
+<node id="replaceExternalLinkMaterial"/>
+<node id="toIsoDate"/>
+<node id="retrieveRelevantChunks"/>
+<node id="addTa"/>
+<node id="listTas"/>
+<node id="removeTa"/>
+<node id="issueToken"/>
+<node id="consumeToken"/>
+<node id="shouldIssueFreshToken"/>
+<edge source="serialize_value" target="get_signature"/>
+<edge source="serialize_value" target="serialize_value"/>
+<edge source="_run_in_child" target="_sandboxed_cwd"/>
+<edge source="tracer" target="serialize_value"/>
+<edge source="extract_objects" target="process_value"/>
+<edge source="process_value" target="process_value"/>
+<edge source="run_user_code" target="extract_objects"/>
+<edge source="_run_output_only_in_child" target="_sandboxed_cwd"/>
+<edge source="trace_code" target="run_user_code"/>
+<edge source="run_code" target="run_user_code_output_only"/>
+<edge source="emit" target="getParticipantKey"/>
+<edge source="emit" target="flush"/>
+<edge source="flush" target="getParticipantKey"/>
+<edge source="ChatView" target="useChatStream"/>
+<edge source="ChatView" target="useConversationDetail"/>
+<edge source="ChatView" target="useMyCourses"/>
+<edge source="ShareControl" target="useShareStatus"/>
+<edge source="ShareControl" target="useCreateShare"/>
+<edge source="ShareControl" target="useDeactivateShare"/>
+<edge source="ConversationSidebar" target="useCurrentUser"/>
+<edge source="ConversationSidebar" target="useLogout"/>
+<edge source="ConversationSidebar" target="useConversations"/>
+<edge source="pre" target="getTextContent"/>
+<edge source="PythonCodeBlock" target="useRunCode"/>
+<edge source="PythonCodeBlock" target="useTraceCode"/>
+<edge source="useConversationDetail" target="conversationDetailQueryKey"/>
+<edge source="useShareStatus" target="shareStatusQueryKey"/>
+<edge source="useCourseDetail" target="courseQueryKey"/>
+<edge source="useMaterials" target="materialsQueryKey"/>
+<edge source="useEnrolledStudents" target="enrollmentsQueryKey"/>
+<edge source="useTas" target="tasQueryKey"/>
+<edge source="AcceptInvitePage" target="useAcceptInvite"/>
+<edge source="CheckEmailPage" target="useCurrentUser"/>
+<edge source="CheckEmailPage" target="useLogout"/>
+<edge source="CollectEmailPage" target="useCurrentUser"/>
+<edge source="CollectEmailPage" target="useLogout"/>
+<edge source="CollectEmailPage" target="useCollectEmail"/>
+<edge source="ForgotPasswordPage" target="useForgotPassword"/>
+<edge source="HomePage" target="useCurrentUser"/>
+<edge source="HomePage" target="useLogin"/>
+<edge source="InstructorConversationDetailPage" target="useInstructorConversationDetail"/>
+<edge source="InstructorConversationsPage" target="useInstructorConversations"/>
+<edge source="InstructorCourseDetailPage" target="useCourseDetail"/>
+<edge source="InstructorCourseDetailPage" target="useDeleteCourse"/>
+<edge source="CourseHeader" target="useUpdateCourse"/>
+<edge source="CourseHeader" target="useDisableCourse"/>
+<edge source="CourseHeader" target="useEnableCourse"/>
+<edge source="MaterialsSection" target="useMaterials"/>
+<edge source="MaterialsSection" target="useDeleteMaterial"/>
+<edge source="MarkdownMaterialForm" target="useCreateMarkdownMaterial"/>
+<edge source="MarkdownMaterialForm" target="useUpdateMarkdownMaterial"/>
+<edge source="ExternalLinkMaterialForm" target="useCreateExternalLinkMaterial"/>
+<edge source="ExternalLinkMaterialForm" target="useUpdateExternalLinkMaterial"/>
+<edge source="SyllabusTopicForm" target="useCreateSyllabusTopic"/>
+<edge source="SyllabusTopicForm" target="useUpdateSyllabusTopic"/>
+<edge source="SyllabusImportForm" target="useImportSyllabus"/>
+<edge source="EnrollmentSection" target="useEnrolledStudents"/>
+<edge source="EnrollmentSection" target="useEnrollStudent"/>
+<edge source="EnrollmentSection" target="useBulkEnroll"/>
+<edge source="EnrollmentSection" target="useUnenrollStudent"/>
+<edge source="TaSection" target="useTas"/>
+<edge source="TaSection" target="useAddTa"/>
+<edge source="TaSection" target="useRemoveTa"/>
+<edge source="InstructorCoursesPage" target="useLogout"/>
+<edge source="InstructorCoursesPage" target="useCourses"/>
+<edge source="InstructorCoursesPage" target="useCreateCourse"/>
+<edge source="ProtectedRoute" target="useCurrentUser"/>
+<edge source="RequireInstructor" target="useCurrentUser"/>
+<edge source="RequireTa" target="useCurrentUser"/>
+<edge source="RequireVerified" target="useCurrentUser"/>
+<edge source="ResetPasswordPage" target="useResetPassword"/>
+<edge source="SharedConversationPage" target="useSharedConversation"/>
+<edge source="TaCourseMaterialsPage" target="useMaterials"/>
+<edge source="TaCourseMaterialsPage" target="useMyTaCourses"/>
+<edge source="TaCoursesPage" target="useLogout"/>
+<edge source="TaCoursesPage" target="useMyTaCourses"/>
+<edge source="VerifyEmailPage" target="useVerifyEmail"/>
+<edge source="isUniqueViolation" target="isUniqueViolation"/>
+<edge source="upsertUser" target="createUser"/>
+<edge source="upsertUser" target="findUserByEmail"/>
+<edge source="ensureMember" target="findEnrollment"/>
+<edge source="requireAuth" target="findSession"/>
+<edge source="requireAuth" target="touchSession"/>
+<edge source="requireAuth" target="findUserById"/>
+<edge source="requireAuth" target="toUserDto"/>
+<edge source="upsertShare" target="findShareByConversationId"/>
+<edge source="deactivateShare" target="deactivateShare"/>
+<edge source="deactivateShare" target="requireOwnedConversation"/>
+<edge source="createCourse" target="createCourse"/>
+<edge source="createCourse" target="toCourseSummary"/>
+<edge source="updateCourse" target="updateCourse"/>
+<edge source="updateCourse" target="toCourseSummary"/>
+<edge source="updateCourse" target="requireOwnedCourse"/>
+<edge source="deleteMaterial" target="deleteMaterial"/>
+<edge source="deleteMaterial" target="requireOwnedCourse"/>
+<edge source="deleteMaterial" target="requireMaterial"/>
+<edge source="postMessage" target="writeSseEvent"/>
+<edge source="sendVerificationEmailIfDue" target="sendEmail"/>
+<edge source="sendVerificationEmailIfDue" target="verifyEmailEmail"/>
+<edge source="sendVerificationEmailIfDue" target="issueToken"/>
+<edge source="sendVerificationEmailIfDue" target="shouldIssueFreshToken"/>
+<edge source="login" target="createSession"/>
+<edge source="login" target="findUserByUsername"/>
+<edge source="login" target="findUserByEmail"/>
+<edge source="login" target="toUserDto"/>
+<edge source="login" target="sendVerificationEmailIfDue"/>
+<edge source="logout" target="deleteSession"/>
+<edge source="collectEmail" target="isUniqueViolation"/>
+<edge source="collectEmail" target="findUserById"/>
+<edge source="collectEmail" target="setEmail"/>
+<edge source="collectEmail" target="sendVerificationEmailIfDue"/>
+<edge source="verifyEmail" target="setEmailVerified"/>
+<edge source="verifyEmail" target="consumeToken"/>
+<edge source="forgotPassword" target="sendEmail"/>
+<edge source="forgotPassword" target="passwordResetEmail"/>
+<edge source="forgotPassword" target="findUserByEmail"/>
+<edge source="forgotPassword" target="issueToken"/>
+<edge source="resetPassword" target="setPassword"/>
+<edge source="resetPassword" target="consumeToken"/>
+<edge source="acceptInvite" target="createSession"/>
+<edge source="acceptInvite" target="findUserById"/>
+<edge source="acceptInvite" target="setPassword"/>
+<edge source="acceptInvite" target="toUserDto"/>
+<edge source="acceptInvite" target="consumeToken"/>
+<edge source="generateTitleSummary" target="getChatCompletion"/>
+<edge source="generateTitleSummary" target="updateTitle"/>
+<edge source="buildSystemPrompt" target="findCourseById"/>
+<edge source="buildSystemPrompt" target="listSyllabusMaterialsForCourse"/>
+<edge source="buildSystemPrompt" target="retrieveRelevantChunks"/>
+<edge source="startNewConversation" target="findCourseById"/>
+<edge source="startNewConversation" target="findEnrollment"/>
+<edge source="startNewConversation" target="generateTitleSummary"/>
+<edge source="continueConversation" target="findConversationByIdForUser"/>
+<edge source="continueConversation" target="findCourseById"/>
+<edge source="continueConversation" target="createMessage"/>
+<edge source="chunkMarkdown" target="flush"/>
+<edge source="chunkMarkdown" target="wordCount"/>
+<edge source="chunkMarkdown" target="splitOversizedParagraph"/>
+<edge source="callService" target="buildBody"/>
+<edge source="callService" target="extractDetail"/>
+<edge source="traceCode" target="callService"/>
+<edge source="listConversations" target="encodeCursor"/>
+<edge source="listConversations" target="decodeCursor"/>
+<edge source="listConversations" target="listConversationsForUser"/>
+<edge source="listConversations" target="listConversationsForInstructor"/>
+<edge source="getConversationDetail" target="findConversationByIdForUser"/>
+<edge source="getConversationDetail" target="findConversationByIdForInstructor"/>
+<edge source="getConversationDetail" target="listMessagesForConversation"/>
+<edge source="getConversationDetail" target="toConversationSummary"/>
+<edge source="getConversationDetail" target="toSummary"/>
+<edge source="requireOwnedConversation" target="findConversationByIdForUser"/>
+<edge source="createShare" target="upsertShare"/>
+<edge source="createShare" target="countMessagesForConversation"/>
+<edge source="createShare" target="hashToken"/>
+<edge source="createShare" target="requireOwnedConversation"/>
+<edge source="getShareStatus" target="findShareByConversationId"/>
+<edge source="getShareStatus" target="requireOwnedConversation"/>
+<edge source="getSharedConversation" target="findConversationById"/>
+<edge source="getSharedConversation" target="findActiveShareByTokenHash"/>
+<edge source="getSharedConversation" target="listFirstMessagesForConversation"/>
+<edge source="getSharedConversation" target="hashToken"/>
+<edge source="requireOwnedCourse" target="findCourseByIdForInstructor"/>
+<edge source="listCourses" target="listCoursesForInstructor"/>
+<edge source="listEnrolledCourses" target="listCoursesForStudent"/>
+<edge source="listTaCourses" target="listCoursesForTa"/>
+<edge source="requireOwnedCourseOrTaMember" target="findCourseById"/>
+<edge source="requireOwnedCourseOrTaMember" target="findTaMembership"/>
+<edge source="getCourseDetail" target="countForCourse"/>
+<edge source="getCourseDetail" target="toCourseSummary"/>
+<edge source="getCourseDetail" target="requireOwnedCourse"/>
+<edge source="deleteCourse" target="softDeleteCourse"/>
+<edge source="deleteCourse" target="requireOwnedCourse"/>
+<edge source="disableCourse" target="setDisabled"/>
+<edge source="disableCourse" target="toCourseSummary"/>
+<edge source="disableCourse" target="requireOwnedCourse"/>
+<edge source="enableCourse" target="setDisabled"/>
+<edge source="enableCourse" target="toCourseSummary"/>
+<edge source="enableCourse" target="requireOwnedCourse"/>
+<edge source="crawlSite" target="extractTitle"/>
+<edge source="crawlSite" target="stripNoiseElements"/>
+<edge source="crawlSite" target="extractSameOriginLinks"/>
+<edge source="crawlSite" target="fetchPage"/>
+<edge source="enrollStudent" target="isUniqueViolation"/>
+<edge source="enrollStudent" target="sendEmail"/>
+<edge source="enrollStudent" target="enrollmentInviteEmail"/>
+<edge source="enrollStudent" target="courseEnrollmentNotificationEmail"/>
+<edge source="enrollStudent" target="createEnrollment"/>
+<edge source="enrollStudent" target="createUser"/>
+<edge source="enrollStudent" target="findUserByEmail"/>
+<edge source="enrollStudent" target="issueToken"/>
+<edge source="enrollSingle" target="requireOwnedCourse"/>
+<edge source="enrollSingle" target="enrollStudent"/>
+<edge source="enrollBulk" target="requireOwnedCourse"/>
+<edge source="enrollBulk" target="enrollStudent"/>
+<edge source="enrollBulk" target="parseRow"/>
+<edge source="listEnrolledStudents" target="listStudentsForCourse"/>
+<edge source="listEnrolledStudents" target="requireOwnedCourse"/>
+<edge source="unenrollStudent" target="deleteEnrollment"/>
+<edge source="unenrollStudent" target="requireOwnedCourse"/>
+<edge source="chunkAndEmbed" target="embed"/>
+<edge source="chunkAndEmbed" target="replaceChunks"/>
+<edge source="chunkAndEmbed" target="chunkMarkdown"/>
+<edge source="chunkAndEmbedOrRollback" target="deleteMaterial"/>
+<edge source="chunkAndEmbedOrRollback" target="chunkAndEmbed"/>
+<edge source="crawlAndEmbed" target="updateMaterial"/>
+<edge source="crawlAndEmbed" target="crawlSite"/>
+<edge source="crawlAndEmbed" target="concatenatePages"/>
+<edge source="crawlAndEmbed" target="chunkAndEmbed"/>
+<edge source="createMarkdownMaterial" target="createMaterial"/>
+<edge source="createMarkdownMaterial" target="requireOwnedCourse"/>
+<edge source="createMarkdownMaterial" target="toMaterialDto"/>
+<edge source="createMarkdownMaterial" target="chunkAndEmbedOrRollback"/>
+<edge source="createSyllabusTopic" target="createMaterial"/>
+<edge source="createSyllabusTopic" target="requireOwnedCourse"/>
+<edge source="createSyllabusTopic" target="toMaterialDto"/>
+<edge source="createSyllabusTopic" target="renderTopicMarkdown"/>
+<edge source="createSyllabusTopic" target="chunkAndEmbedOrRollback"/>
+<edge source="createExternalLinkMaterial" target="createMaterial"/>
+<edge source="createExternalLinkMaterial" target="requireOwnedCourse"/>
+<edge source="createExternalLinkMaterial" target="toMaterialDto"/>
+<edge source="createExternalLinkMaterial" target="crawlAndEmbed"/>
+<edge source="importSyllabus" target="requireOwnedCourse"/>
+<edge source="importSyllabus" target="createSyllabusTopic"/>
+<edge source="listMaterials" target="listMaterialsForCourse"/>
+<edge source="listMaterials" target="requireOwnedCourseOrTaMember"/>
+<edge source="requireMaterial" target="findMaterialByIdForCourse"/>
+<edge source="getMaterialForDownload" target="requireOwnedCourseOrTaMember"/>
+<edge source="getMaterialForDownload" target="requireMaterial"/>
+<edge source="getMaterialType" target="requireOwnedCourse"/>
+<edge source="getMaterialType" target="requireMaterial"/>
+<edge source="replaceMarkdownMaterial" target="updateMaterial"/>
+<edge source="replaceMarkdownMaterial" target="requireOwnedCourse"/>
+<edge source="replaceMarkdownMaterial" target="toMaterialDto"/>
+<edge source="replaceMarkdownMaterial" target="chunkAndEmbedOrRollback"/>
+<edge source="replaceMarkdownMaterial" target="requireMaterial"/>
+<edge source="replaceSyllabusTopic" target="updateMaterial"/>
+<edge source="replaceSyllabusTopic" target="requireOwnedCourse"/>
+<edge source="replaceSyllabusTopic" target="toMaterialDto"/>
+<edge source="replaceSyllabusTopic" target="renderTopicMarkdown"/>
+<edge source="replaceSyllabusTopic" target="chunkAndEmbedOrRollback"/>
+<edge source="replaceSyllabusTopic" target="requireMaterial"/>
+<edge source="replaceExternalLinkMaterial" target="updateMaterial"/>
+<edge source="replaceExternalLinkMaterial" target="requireOwnedCourse"/>
+<edge source="replaceExternalLinkMaterial" target="toMaterialDto"/>
+<edge source="replaceExternalLinkMaterial" target="crawlAndEmbed"/>
+<edge source="replaceExternalLinkMaterial" target="requireMaterial"/>
+<edge source="retrieveRelevantChunks" target="embed"/>
+<edge source="retrieveRelevantChunks" target="searchChunks"/>
+<edge source="retrieveRelevantChunks" target="toIsoDate"/>
+<edge source="addTa" target="isUniqueViolation"/>
+<edge source="addTa" target="sendEmail"/>
+<edge source="addTa" target="taInviteEmail"/>
+<edge source="addTa" target="courseTaNotificationEmail"/>
+<edge source="addTa" target="createTaMembership"/>
+<edge source="addTa" target="createUser"/>
+<edge source="addTa" target="findUserByEmail"/>
+<edge source="addTa" target="requireOwnedCourse"/>
+<edge source="addTa" target="issueToken"/>
+<edge source="listTas" target="listTasForCourse"/>
+<edge source="listTas" target="requireOwnedCourse"/>
+<edge source="removeTa" target="deleteEnrollment"/>
+<edge source="removeTa" target="requireOwnedCourse"/>
+<edge source="issueToken" target="createToken"/>
+<edge source="issueToken" target="hashToken"/>
+<edge source="consumeToken" target="findValidToken"/>
+<edge source="consumeToken" target="markTokenUsed"/>
+<edge source="consumeToken" target="hashToken"/>
+<edge source="shouldIssueFreshToken" target="findLatestTokenForUser"/>
+</graph></graphml>

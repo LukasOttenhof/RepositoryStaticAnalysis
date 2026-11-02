@@ -1,0 +1,7 @@
+branch,head,ncloc,files,functions,classes,statements,comment_lines_density,complexity,cognitive_complexity,bugs,vulnerabilities,code_smells,security_hotspots,reliability_rating,security_rating,sqale_rating,sqale_index,duplicated_lines_density,coverage,lz_functions,lz_files,lz_ccn_mean,lz_ccn_median,lz_ccn_p90,lz_ccn_max,lz_ccn_over_10,lz_pct_ccn_over_10,lz_fn_nloc_mean,lz_fn_nloc_median,lz_params_mean,lz_params_median,cg_functions,cg_edges,cg_fanin_mean,cg_fanin_median,cg_fanin_max
+main,2bdb3b3 2026-10-22 remove: extensino for Claude Code,658,14,19,0,81,2.5,41,14,0,2,0,0,1.0,2.0,1.0,0,0.0,0.0,19,4,2.26,1.0,6.2,7,0,0.0%,10.58,5.0,0.16,0.0,6,3,0.5,0.0,2
+microservice,94e7bf0 2026-10-26 prep: session 3,4016,51,299,3,1372,2.7,684,422,4,2,1,0,3.0,2.0,1.0,5,0.8,0.0,273,37,2.65,1.0,6.0,20,10,3.7%,10.1,5.0,0.76,0.0,141,111,0.79,0.0,25
+s1,1f64e74 2026-10-24 revert,1595,33,112,1,440,2.2,226,112,0,2,0,0,1.0,2.0,1.0,0,0.0,0.0,108,20,1.96,1.0,4.0,12,1,0.9%,7.4,4.0,0.57,0.0,48,28,0.58,0.0,7
+s2,bceb764 2026-10-24 second session changes,3745,50,286,1,1157,1.9,605,295,4,2,1,0,3.0,2.0,1.0,5,0.9,0.0,260,36,2.39,1.0,6.0,14,7,2.7%,9.64,5.0,0.7,0.0,128,101,0.79,0.0,25
+s3,1484e71 2026-10-29 prep: s4,4016,51,299,3,1372,2.7,684,422,4,2,1,0,3.0,2.0,1.0,5,0.8,0.0,273,37,2.65,1.0,6.0,20,10,3.7%,10.1,5.0,0.76,0.0,141,111,0.79,0.0,25
+s4,14f80c2 2026-10-29 session 4 one million changes,6597,81,510,3,2178,3.6,1156,645,7,2,5,0,3.0,2.0,1.0,40,1.8,0.0,466,63,2.53,1.0,6.0,22,14,3.0%,9.94,5.0,0.76,0.0,234,196,0.84,0.0,42
