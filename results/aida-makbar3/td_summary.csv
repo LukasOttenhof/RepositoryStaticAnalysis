@@ -1,9 +1,9 @@
-,,main,session-1,session-2,session-3,change session-1 -> session-3
-,lines of code,354.0,1697.0,4416.0,7247.0,5550.0
-SonarQube,tech debt min / KLOC,0.0,2.95,5.66,3.45,0.5
-SonarQube,cognitive cx / KLOC,39.55,88.98,64.54,82.24,-6.74
-ESLint,smells / KLOC,0.0,4.12,2.94,3.04,-1.08
-ESLint,% functions cx > 10,0.0,2.4,1.7,1.9,-0.5
-Sonargraph,NCCD,0.51,0.98,1.12,1.16,0.18
-Sonargraph,files in cycles,0.0,0.0,0.0,0.0,0.0
-Sonargraph,structural debt / KLOC,0.0,29.46,33.74,32.7,3.24
+,,main,session-1,session-2,session-3,session-4,change session-1 -> session-4
+,lines of code,354.0,1697.0,4416.0,7247.0,8442.0,6745.0
+SonarQube,tech debt min / KLOC,0.0,2.95,5.66,3.45,5.33,2.38
+SonarQube,cognitive cx / KLOC,39.55,88.98,64.54,82.24,79.48,-9.5
+ESLint,smells / KLOC,0.0,4.12,2.94,3.04,2.96,-1.16
+ESLint,% functions cx > 10,0.0,2.4,1.7,1.9,1.8,-0.6
+Sonargraph,NCCD,0.51,0.98,1.12,1.16,1.2,0.22
+Sonargraph,files in cycles,0.0,0.0,0.0,0.0,0.0,0.0
+Sonargraph,structural debt / KLOC,0.0,29.46,33.74,32.7,31.51,2.05
