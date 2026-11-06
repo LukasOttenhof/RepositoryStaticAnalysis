@@ -1,9 +1,17 @@
 ,,aida-dpenner2 (s4),aida-makbar3 (session-4)
 ,lines of code,6402.0,8442.0
 SonarQube,tech debt min / KLOC,6.25,5.33
+SonarQube,code smells,5.0,3.0
+SonarQube,code smells / KLOC,0.78,0.36
+SonarQube,bugs,7.0,0.0
+SonarQube,bugs / KLOC,1.09,0.0
+SonarQube,vulnerabilities,1.0,0.0
+SonarQube,complexity / KLOC,180.57,154.94
 SonarQube,cognitive cx / KLOC,100.75,79.48
 ESLint,smells / KLOC,5.47,2.96
-ESLint,% functions cx > 10,1.8,1.8
+ESLint,functions,497.0,649.0
 Sonargraph,NCCD,1.47,1.2
+Sonargraph,ACD,7.7,7.09
+Sonargraph,average complexity,4.27,3.19
 Sonargraph,files in cycles,2.0,0.0
 Sonargraph,structural debt / KLOC,11.56,31.51

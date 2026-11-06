@@ -1,9 +1,17 @@
 ,,main,session-1,session-2,session-3,session-4,change session-1 -> session-4
 ,lines of code,354.0,1697.0,4416.0,7247.0,8442.0,6745.0
 SonarQube,tech debt min / KLOC,0.0,2.95,5.66,3.45,5.33,2.38
+SonarQube,code smells,0.0,1.0,2.0,2.0,3.0,2.0
+SonarQube,code smells / KLOC,0.0,0.59,0.45,0.28,0.36,-0.23
+SonarQube,bugs,0.0,0.0,0.0,0.0,0.0,0.0
+SonarQube,bugs / KLOC,0.0,0.0,0.0,0.0,0.0,0.0
+SonarQube,vulnerabilities,1.0,0.0,0.0,0.0,0.0,0.0
+SonarQube,complexity / KLOC,115.82,161.46,150.82,158.13,154.94,-6.52
 SonarQube,cognitive cx / KLOC,39.55,88.98,64.54,82.24,79.48,-9.5
 ESLint,smells / KLOC,0.0,4.12,2.94,3.04,2.96,-1.16
-ESLint,% functions cx > 10,0.0,2.4,1.7,1.9,1.8,-0.6
+ESLint,functions,19.0,124.0,352.0,572.0,649.0,525.0
 Sonargraph,NCCD,0.51,0.98,1.12,1.16,1.2,0.22
+Sonargraph,ACD,1.17,4.53,6.09,6.73,7.09,2.56
+Sonargraph,average complexity,2.29,3.28,3.19,3.1,3.19,-0.09
 Sonargraph,files in cycles,0.0,0.0,0.0,0.0,0.0,0.0
 Sonargraph,structural debt / KLOC,0.0,29.46,33.74,32.7,31.51,2.05
